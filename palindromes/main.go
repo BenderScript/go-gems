@@ -1,5 +1,5 @@
 /*
-Determine if two strings are one insert or edit away from being equal
+Determine if two strings are palindromes
 */
 
 package main
