@@ -1,53 +1,61 @@
 /*
-Build a Sieve of Eratosthenes up to a limit
+Determine if two strings are palindromes
 */
 
 package main
 
 import (
 	"fmt"
-	"math"
 )
 
 type test struct {
-	limit     float64
-	composite []bool
+	str1   string
+	str2   string
+	result bool
 }
 
 var tests []test
 
 func main() {
+
 	for _, t := range tests {
-		buildSieve(t)
-		fmt.Printf("Primes (limit: %d): ", int(t.limit))
-		for index, val := range t.composite {
-			if !val && index > 1 {
-				fmt.Printf("%d ", index)
-			}
+		if isPalindrome(t.str1, t.str2) {
+			fmt.Println("Strings" + " " + t.str1 + " " + t.str2 + " are palindromes")
+		} else {
+			fmt.Println("Strings" + " " + t.str1 + " " + t.str2 + " are not palindromes")
 		}
-		fmt.Println()
 	}
 }
 
-func buildSieve(t test) {
-	for i := 2; i <= int(math.Sqrt(t.limit)); i = i + 1 {
-		if !t.composite[i] {
-			for p := 2; ; p++ {
-				next := p * i
-				if next > int(t.limit) {
-					break
-				}
-				t.composite[next] = true
-			}
+func isPalindrome(str1, str2 string) bool {
+	len1 := len(str1)
+	len2 := len(str2)
+	diff := len1 - len2
+
+	if diff != 0 {
+		return false
+	}
+
+	for idx, ch := range str1 {
+		pos := len2 - idx - 1
+		if ch != int32(str2[pos]) {
+			return false
+		}
+		if idx >= pos-1 {
+			break
 		}
 	}
-	return
+	return true
 }
 
 func init() {
 	tests = make([]test, 0)
-	tests = append(tests, test{10, make([]bool, 11)})
-	tests = append(tests, test{25, make([]bool, 26)})
-	tests = append(tests, test{50, make([]bool, 51)})
-	tests = append(tests, test{100, make([]bool, 101)})
+	tests = append(tests, test{"a", "a", true})
+	tests = append(tests, test{"dad", "dad", true})
+	tests = append(tests, test{"hannah", "hannah", true})
+	tests = append(tests, test{"abe", "normal", false})
+	tests = append(tests, test{"one", "ones", false})
+	tests = append(tests, test{"abba", "abba", true})
+	tests = append(tests, test{"", "", true})
+
 }
