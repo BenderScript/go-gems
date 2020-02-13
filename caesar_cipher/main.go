@@ -1,5 +1,5 @@
 /*
-Caesar cipher
+Caesar cipher for ASCII chars with an alphabet of 26 chars
 */
 
 package main

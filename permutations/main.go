@@ -29,6 +29,14 @@ func isPermutation(str1, str2 string) bool {
 	var charMap map[rune]int
 	charMap = make(map[rune]int)
 
+	len1 := len(str1)
+	len2 := len(str2)
+	diff := len1 - len2
+
+	if diff != 0 {
+		return false
+	}
+
 	for _, char := range str1 {
 		charMap[char] += 1
 	}
