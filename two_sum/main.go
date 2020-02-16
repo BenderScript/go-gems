@@ -12,7 +12,6 @@
 package main
 
 import (
-	"fmt"
 	"reflect"
 )
 
@@ -30,8 +29,6 @@ func main() {
 		ret := findSum(t.array, t.sum)
 		if !reflect.DeepEqual(ret, t.indexes) {
 			panic("Test failed")
-		} else {
-			fmt.Println(ret)
 		}
 	}
 
