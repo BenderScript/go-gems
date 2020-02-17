@@ -52,6 +52,6 @@
    * [main.go](./urlify/main.go)
  * [variadic_functions](./variadic_functions)
  
- Variadic functions in Go are certainly off-the-beaten path. One hidden gem is **interface{} variadic functions**
+    Variadic functions in Go are certainly off-the-beaten path. One hidden gem is **interface{} variadic functions**
  
    * [main.go](./variadic_functions/main.go)
