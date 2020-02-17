@@ -1,3 +1,5 @@
+// From book Concurrency in Go.
+
 package main
 
 import (
