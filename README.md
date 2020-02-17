@@ -1,4 +1,4 @@
-# Golang Gems and Classic Problems
+# Go Programming Gems and Classic Problems
 
 The goal is to compile hidden gems and off-the-beaten path Go features and patterns. This is not meant to be a library or reference implementation.
 
