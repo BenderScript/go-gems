@@ -1,4 +1,4 @@
-# Golang Off the Beaten Path
+# Golang Gems
 
 
  * [add_two_numbers](./add_two_numbers)
