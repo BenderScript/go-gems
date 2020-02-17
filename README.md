@@ -15,6 +15,10 @@ The goal is to compile hidden gems and off-the-beaten path Go features and patte
  
    * [main.go](./composite_literals/main.go)
  * [eratosthenes](./eratosthenes)
+    
+    A Classic problem but I wanted to dig deeper into the number theory behind it. I suggest reading 
+    [Why in Sieve of Erastothenes of 𝑁 number you need to check and cross out numbers up to 𝑁‾‾√? How it's proved?](https://math.stackexchange.com/questions/58799/why-in-sieve-of-erastothenes-of-n-number-you-need-to-check-and-cross-out-numbe)
+    
    * [main.go](./eratosthenes/main.go)
  * [for_with_label](./for_with_label)
     
