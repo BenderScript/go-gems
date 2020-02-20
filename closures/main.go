@@ -1,3 +1,7 @@
+// Go lang Closures.
+// Creates a closure function and passes it to another function as a parameter.
+// This function in turn calls the closure.
+
 package main
 
 import (
