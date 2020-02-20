@@ -20,13 +20,13 @@ func main() {
 func createClosure(closureInput int) func(int) int {
 	fmt.Println("Create Closure")
 	closureVar := -10
-	fmt.Println(fmt.Sprintf("%-20v : %d", "closureInput ", closureInput))
-	fmt.Println(fmt.Sprintf("%-20v : %d", "closureVar ", closureVar))
+	fmt.Println(fmt.Sprintf("%-30v : %d", "Initial closureInput ", closureInput))
+	fmt.Println(fmt.Sprintf("%-30v : %d", "Initial closureVar ", closureVar))
 	return func(a int) int {
 		closureInput += a
 		closureVar -= a
-		fmt.Println(fmt.Sprintf("%-20v : %d", "closureInput ", closureInput))
-		fmt.Println(fmt.Sprintf("%-20v : %d", "closureVar ", closureVar))
+		fmt.Println(fmt.Sprintf("%-30v : %d", "closureInput ", closureInput))
+		fmt.Println(fmt.Sprintf("%-30v : %d", "closureVar ", closureVar))
 		return closureInput + closureVar
 	}
 }
