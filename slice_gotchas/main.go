@@ -14,10 +14,12 @@ func main() {
 	b := "example"
 	fmt.Printf("b is: %q \n", b)
 	fmt.Printf("b[len(b):] is not out of range: %q \n", b[len(b):])
-	a := make([]int, 3, 5)
-	fmt.Println("a is: ", a)
-	fmt.Println("a[5:5] is not out of bounds: ", a[5:5])
-	fmt.Println("Because it is a slice of int and cap is: ", cap(a))
-	fmt.Println("But a[5:] is out of bounds since a missing high index defaults to the length ")
-	_ = a[5:]
+	c := make([]int, 3)
+	fmt.Println("c[len(c):len(c)] is not out of bounds: ", c[len(c):len(c)])
+	d := make([]int, 3, 5)
+	fmt.Println("d is: ", d)
+	fmt.Println("d[5:5] is not out of bounds: ", d[5:5])
+	fmt.Println("Because it is d slice of int and cap is: ", cap(d))
+	fmt.Println("But d[5:] is out of bounds since d missing high index defaults to the length ")
+	_ = d[5:]
 }
