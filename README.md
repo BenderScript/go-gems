@@ -39,7 +39,6 @@ The goal is to compile hidden gems and off-the-beaten path Go features and patte
      
 ## Classic Problems 
 
- * [add_two_numbers](./add_two_numbers)
  * [binary_uint8_reversal](./binary_uint8_reversal)
  * [caesar_cipher](./caesar_cipher)
  * [eratosthenes](./eratosthenes)
