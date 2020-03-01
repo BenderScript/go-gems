@@ -19,7 +19,7 @@ func main() {
 	d := make([]int, 3, 5)
 	fmt.Println("d is: ", d)
 	fmt.Println("d[5:5] is not out of bounds: ", d[5:5])
-	fmt.Println("Because it is d slice of int and cap is: ", cap(d))
-	fmt.Println("But d[5:] is out of bounds since d missing high index defaults to the length ")
+	fmt.Println("because d is a slice of int and cap is: ", cap(d))
+	fmt.Println("But d[5:] is out of bounds since d missing high index defaults to the length (3)")
 	_ = d[5:]
 }
