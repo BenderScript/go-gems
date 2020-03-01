@@ -4,6 +4,10 @@ The goal is to compile hidden gems and off-the-beaten path Go features and patte
 
 ## Gems and Off-the-beaten Path
 
+ * [closures](./closures)
+    
+    A dramatic example of Go Closures. A two-level closure pattern.
+
  * [composite_literals](./composite_literals)
     
     It is important to understand what **composite literals** mean in Go through some interesting use-cases
@@ -14,7 +18,7 @@ The goal is to compile hidden gems and off-the-beaten path Go features and patte
     
   * [runes_bytes_loops](./runes_bytes_loops)
   
-      A must-understand for serious programmers. Simple program demonstrating tricky [concepts](https://blog.golang.org/strings). Do you know that 'a' is a int32, str[0] is a uint8, the value of position 0 in a range loop is a rune? 
+      A must-understand for serious programmers. Simple program demonstrating tricky [concepts](https://blog.golang.org/strings). Do you know that 'a' is a int32, str[0] is a uint8, the value of position 0 in a _range loop_ is a rune? 
       
    * [slice_gotchas](./slice_gotchas)
    
