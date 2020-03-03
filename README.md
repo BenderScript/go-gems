@@ -33,6 +33,10 @@ The goal is to compile hidden gems and off-the-beaten path Go features and patte
  
    Implementation of simple functions that demonstrate interesting slice operations such as [**extending, expanding and inserting**](https://github.com/golang/go/wiki/SliceTricks) elements.
    
+  * [strings_in_depth](./strings_in_depth)
+
+    Let's look under the hood and see how strings are represented in Go and print a string by walking the memory addresses, C-style.
+   
   * [variadic_functions](./variadic_functions)
   
      Variadic functions in Go are certainly off-the-beaten path. One hidden gem is **interface{} variadic functions**
