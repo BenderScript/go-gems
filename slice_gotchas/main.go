@@ -14,6 +14,7 @@ func main() {
 	b := "example"
 	fmt.Printf("b is: %q \n", b)
 	fmt.Printf("b[len(b):] returns empty string: %q \n", b[len(b):])
+	fmt.Printf("But b[len(b)] causes an out of bounds error")
 	fmt.Println("======")
 	c := make([]int, 3)
 	fmt.Printf("c is : %T \n", c)
@@ -23,6 +24,6 @@ func main() {
 	fmt.Printf("d is %T with len (%d) and cap (%d) \n", d, len(d), cap(d))
 	fmt.Println("d[5:5] is not out of bounds: ", d[5:5])
 	fmt.Println("because d is a slice of int and cap is: ", cap(d))
-	fmt.Printf("But d[5:] is out of bounds since d missing high index defaults to length : %d \n", len(d))
+	fmt.Printf("But d[5:] is out of bounds since d missing high index defaults to slice length (not array length): %d \n", len(d))
 	_ = d[5:]
 }
